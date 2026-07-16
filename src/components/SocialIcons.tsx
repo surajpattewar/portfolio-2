@@ -63,7 +63,7 @@ const SocialIcons = () => {
           </a>
         </span> */}
         <span>
-          <a href="https://www.linkedin.com/in/nisarg1710" target="_blank">
+          <a href="https://www.linkedin.com/in/suraj-pattewar" target="_blank">
             <FaLinkedinIn />
           </a>
         </span>
@@ -78,12 +78,12 @@ const SocialIcons = () => {
           </a>
         </span> */}
         <span>
-          <a href="mailto:nisargshah1710@gmail.com">
+          <a href="mailto:surajpattewar95@gmail.com">
             <MdOutlineMail />
           </a>
         </span>
       </div>
-      <a className="resume-button" href="#">
+      <a className="resume-button" href="/Suraj_Pattewar_Resume_2026.pdf" target="_blank" rel="noopener noreferrer">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />

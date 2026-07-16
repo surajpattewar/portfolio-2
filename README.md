@@ -1,4 +1,4 @@
-# Nisarg Shah - Portfolio Website 🚀
+# Suraj Pattewar - Portfolio Website 🚀
 
 This is my personal portfolio website showcasing my work in data analytics, AI/ML, and cloud technologies.
 
@@ -43,7 +43,7 @@ This project uses GSAP trial plugins for development. For production deployment 
 
 ## Credits
 
-This portfolio is built upon the foundation of [Rajesh Chityal's portfolio template](https://github.com/Debashtalukder/rajesh-portfolio), with significant modifications and enhancements.
+This portfolio is customized by Suraj Pattewar, based on the template by [Nisarg Shah](https://github.com/nisarg-shahx/nisarg-shah-portfolio) (which was built upon the foundation of [Rajesh Chityal's portfolio template](https://github.com/Debashtalukder/rajesh-portfolio)).
 
 ## License
 

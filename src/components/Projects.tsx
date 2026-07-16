@@ -3,40 +3,40 @@ import "./styles/Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "AI-Powered Defect Attribution System",
-      category: "MACHINE LEARNING & ANALYTICS",
-      challenge: "Manual defect analysis was consuming 400+ hours annually, with inconsistent accuracy across teams.",
-      solution: "Designed and deployed an ML-driven system using AWS Bedrock and custom ML models to automate defect categorization and root cause analysis.",
+      title: "AI-Powered Tender Intelligence & Scraper",
+      category: "INTELLIGENT AUTOMATION & AGENTIC AI",
+      challenge: "T-Systems needed a way to discover and evaluate business opportunities, but manually monitoring tender portals and routing delayed document updates took 50–60 hours per week and was highly error-prone.",
+      solution: "Architected and developed FastAPI-based microservices, Agentic AI workflows, and LLM integrations for tender document analysis and information retrieval. Designed a self-healing scraper platform with automatic stakeholder routing.",
       impact: [
-        "15% improvement in defect attribution accuracy",
-        "400+ hours saved annually per program leader",
-        "Reduced manual analysis time by 75%"
+        "Reduced manual tender monitoring effort by 50–60 hours per week",
+        "Eliminated manual spreadsheet-based task assignments entirely",
+        "Improved tender coverage and minimized human errors through automated recovery"
       ],
-      techStack: ["AWS Bedrock", "Python", "PostgreSQL", "AWS Lambda", "Enterprise-wide"]
+      techStack: ["FastAPI", "Agentic AI", "LLM Integration", "Playwright", "Python", "Kubernetes"]
     },
     {
-      title: "Flash Report Automation Platform",
-      category: "BUSINESS INTELLIGENCE & AUTOMATION",
-      challenge: "Program leaders spent excessive time manually compiling flash reports, delaying critical business decisions.",
-      solution: "Built an AI-driven bridge connecting multiple data sources with automated report generation, deployed on AWS infrastructure with real-time data sync.",
+      title: "High-Performance OLAP Advertising Platform",
+      category: "DATA INFRASTRUCTURE & CLOUD OPTIMIZATION",
+      challenge: "The existing advertising platform relied on a heavy PySpark and Elasticsearch infrastructure that was expensive, resource-intensive, and experienced long data load times.",
+      solution: "Led the migration of the entire advertising data stack from PySpark + Elasticsearch to DuckDB + ClickHouse. Optimized DuckDB SQL and refactored Scala-based Spark streaming jobs.",
       impact: [
-        "75% reduction in report creation time",
-        "400+ hours saved annually",
-        "Real-time insights instead of delayed reports"
+        "Reduced cloud infrastructure usage by 85%",
+        "Cut active operational costs by 78%",
+        "Reduced data load and ingestion times from hours to minutes"
       ],
-      techStack: ["AWS Glue", "AWS Athena", "Tableau", "Python", "50+ stakeholders"]
+      techStack: ["DuckDB", "ClickHouse", "PySpark", "Elasticsearch", "Scala", "SQL Optimization"]
     },
     {
-      title: "Analytics Dashboards Ecosystem",
-      category: "DATA STRATEGY & VISUALIZATION",
-      challenge: "Lack of standardized metrics led to inconsistent decision-making across operations.",
-      solution: "Built a comprehensive analytics dashboard ecosystem with 140+ dashboards spanning data strategy, KPI frameworks, and real-time operational insights.",
+      title: "Enterprise Bank Data Lake GCP Migration",
+      category: "DATA MIGRATION & BIG DATA SYSTEMS",
+      challenge: "A banking client's legacy on-premises Cloudera Data Lake was hitting scalability ceilings, slowing down critical research workflows and reporting.",
+      solution: "Migrated a 170TB Data Lake from Cloudera to Google Cloud Platform (GCP) using PySpark and Apache Airflow. Built custom ETL pipelines and integrated Vertex Matching Engine for vector embeddings.",
       impact: [
-        "140+ analytics dashboards delivered",
-        "KPI frameworks supporting data-driven decisions",
-        "Unified analytics platform across operations"
+        "Migrated 170TB of sensitive financial data with zero downtime",
+        "Developed automated ETL pipelines for web-scraped research data (APIs, XML)",
+        "Received the TrailBlazer Award for innovation and technical delivery"
       ],
-      techStack: ["Tableau", "AWS QuickSight", "PostgreSQL", "AWS RDS", "$40M+ business value"]
+      techStack: ["GCP", "PySpark", "Apache Airflow", "Vertex AI", "Cloudera", "BigQuery"]
     }
   ];
 

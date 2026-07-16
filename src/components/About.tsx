@@ -6,13 +6,13 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I'm a Business Intelligence Manager at Amazon, driving data-driven transformation across enterprise operations. With a Master's in Information Technology and Management from UT Dallas, I lead high-performing teams to architect AI-powered solutions that unlock business value.
+          I'm a Lead Data Engineer specializing in building scalable data architectures, real-time data streaming pipelines, and high-performance data platforms. I design and implement enterprise data systems that process massive datasets with high throughput and low latency.
         </p>
         <p className="para highlight">
-          My expertise spans designing scalable BI systems, implementing advanced analytics, and leveraging AWS cloud technologies to solve complex business challenges. I'm passionate about translating data into actionable insights that drive measurable impact.
+          My expertise spans architecting cloud data warehouses, designing ETL/ELT pipelines with Apache Spark and Apache Airflow, and managing database infrastructures (SQL & NoSQL). I focus on building reliable, cost-efficient, and optimized data solutions to empower machine learning and analytics teams.
         </p>
         <p className="para">
-          I combine technical depth with people-first leadership—mentoring engineers, collaborating across functions, and building cultures of innovation. Whether architecting data pipelines or leading strategic initiatives, I'm committed to delivering intelligent solutions that transform how organizations make decisions.
+          I combine deep technical expertise in data engineering with a focus on engineering excellence—mentoring junior engineers, establishing data modeling standards, and collaborating with cross-functional product teams. I'm passionate about translating raw data into clean, structured, and highly accessible assets.
         </p>
       </div>
     </div>

@@ -10,17 +10,17 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:nisargshah1710@gmail.com" data-cursor="disable">
-                nisargshah1710@gmail.com
+              <a href="mailto:surajpattewar95@gmail.com" data-cursor="disable">
+                surajpattewar95@gmail.com
               </a>
             </p>
             <h4>Education</h4>
-            <p>Master's in Information Technology & Management, UT Dallas</p>
+            <p>Bachelor of Engineering in Computer Science</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://www.linkedin.com/in/nisarg1710"
+              href="https://www.linkedin.com/in/suraj-pattewar"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -30,10 +30,10 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Nisarg Shah</span>
+              Designed and Developed <br /> by <span>Suraj Pattewar</span>
             </h2>
             <h5>
-              <MdCopyright /> 2025
+              <MdCopyright /> 2026
             </h5>
           </div>
         </div>

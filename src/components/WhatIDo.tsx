@@ -3,39 +3,39 @@ import "./styles/WhatIDo.css";
 const WhatIDo = () => {
   const expertise = [
     {
-      category: "Data & Analytics",
+      category: "Data Engineering & Platforms",
       skills: [
-        { name: "AWS Data Stack", level: "Expert" },
-        { name: "SQL & Data Modeling", level: "Expert" },
-        { name: "Tableau & QuickSight", level: "Advanced" },
-        { name: "ETL/ELT Pipelines", level: "Advanced" }
+        { name: "Big Data (PySpark, Kafka, Airflow)", level: "Expert" },
+        { name: "Modern OLAP (ClickHouse, DuckDB)", level: "Expert" },
+        { name: "Distributed Data Lake Architecture", level: "Expert" },
+        { name: "ETL/ELT & Data Migration", level: "Expert" }
       ]
     },
     {
-      category: "AI & Automation",
+      category: "AI & Intelligent Automation",
       skills: [
-        { name: "Generative AI & LLMs", level: "Advanced" },
-        { name: "ML Architecture", level: "Advanced" },
-        { name: "Agentic Workflows", level: "Proficient" },
-        { name: "Computer Vision", level: "Proficient" }
+        { name: "Agentic AI & LLM Integration", level: "Expert" },
+        { name: "Vertex AI & Vector Databases", level: "Advanced" },
+        { name: "Intelligent Scrapers (Playwright)", level: "Advanced" },
+        { name: "Workflow Automation & Streamlit", level: "Advanced" }
       ]
     },
     {
-      category: "Leadership & Strategy",
+      category: "Backend & Systems",
       skills: [
-        { name: "Team Leadership", level: "Expert" },
-        { name: "Cross-functional Collaboration", level: "Expert" },
-        { name: "Technical Strategy", level: "Advanced" },
-        { name: "Mentorship & Development", level: "Advanced" }
+        { name: "FastAPI & Microservices", level: "Expert" },
+        { name: "Python & SQL", level: "Expert" },
+        { name: "REST APIs & JWT Auth", level: "Expert" },
+        { name: "Unix Shell Scripting & C/Scala", level: "Proficient" }
       ]
     },
     {
-      category: "Cloud & Infrastructure",
+      category: "Cloud & Deployment",
       skills: [
-        { name: "AWS Architecture", level: "Expert" },
-        { name: "Scalable Systems Design", level: "Advanced" },
-        { name: "Cost Optimization", level: "Advanced" },
-        { name: "DevOps & Automation", level: "Proficient" }
+        { name: "GCP (BigQuery, Cloud Run, GCS)", level: "Expert" },
+        { name: "Docker & Kubernetes", level: "Advanced" },
+        { name: "CI/CD & Git Pipelines", level: "Advanced" },
+        { name: "Infrastructure Migrations", level: "Expert" }
       ]
     }
   ];
