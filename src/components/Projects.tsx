@@ -5,14 +5,14 @@ const Projects = () => {
     {
       title: "AI-Powered Tender Intelligence & Scraper",
       category: "INTELLIGENT AUTOMATION & AGENTIC AI",
-      challenge: "T-Systems needed a way to discover and evaluate business opportunities, but manually monitoring tender portals and routing delayed document updates took 50–60 hours per week and was highly error-prone.",
+      challenge: "Business needed a way to discover and evaluate business opportunities, but manually monitoring tender portals and routing delayed document updates took 50–60 hours per week and was highly error-prone.",
       solution: "Architected and developed FastAPI-based microservices, Agentic AI workflows, and LLM integrations for tender document analysis and information retrieval. Designed a self-healing scraper platform with automatic stakeholder routing.",
       impact: [
         "Reduced manual tender monitoring effort by 50–60 hours per week",
         "Eliminated manual spreadsheet-based task assignments entirely",
         "Improved tender coverage and minimized human errors through automated recovery"
       ],
-      techStack: ["FastAPI", "Agentic AI", "LLM Integration", "Playwright", "Python", "Kubernetes"]
+      techStack: ["FastAPI", "Agentic AI", "LLM Integration", "Playwright", "Python", "Google Cloud Run"]
     },
     {
       title: "High-Performance OLAP Advertising Platform",
@@ -54,18 +54,18 @@ const Projects = () => {
             <div key={idx} className="project-card">
               <h3 className="project-title">{project.title}</h3>
               <p className="project-category">{project.category}</p>
-              
+
               <div className="project-content">
                 <div className="project-section">
                   <h4>Challenge</h4>
                   <p>{project.challenge}</p>
                 </div>
-                
+
                 <div className="project-section">
                   <h4>Solution</h4>
                   <p>{project.solution}</p>
                 </div>
-                
+
                 <div className="project-section">
                   <h4>Impact</h4>
                   <ul className="impact-list">
