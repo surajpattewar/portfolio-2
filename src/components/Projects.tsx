@@ -37,6 +37,18 @@ const Projects = () => {
         "Received the TrailBlazer Award for innovation and technical delivery"
       ],
       techStack: ["GCP", "PySpark", "Apache Airflow", "Vertex AI", "Cloudera", "BigQuery"]
+    },
+    {
+      title: "Data Lake Implementation for Credit Card Provider",
+      category: "DATA LAKE IMPLEMENTATION & ETL PIPELINES",
+      challenge: "One of the largest credit card providers in India needed to build a secure, robust on-premises Data Lake to ingest and process 37TB of historical data across 200+ tables with full audit controls.",
+      solution: "Designed and built an end-to-end ETL ingestion pipeline from scratch using IBM DataStage and Unix shell scripts. Developed 20+ automation scripts, loaded data using Sqoop into Hive/Impala, and optimized query performance by 30%.",
+      impact: [
+        "Successfully migrated 37TB of historical transaction and account data across 200+ tables",
+        "Developed 20+ Unix automation scripts for auditing, purging, email alerts, and workflow scheduling",
+        "Led a team of 4 Data Engineers, optimizing Hive/Impala queries and improving performance by 30%"
+      ],
+      techStack: ["Hive", "Impala", "Sqoop", "Spark", "Unix Shell Scripting", "IBM DataStage", "SQL"]
     }
   ];
 

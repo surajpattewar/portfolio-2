@@ -42,8 +42,8 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          SP
+        <a href="/#" className="navbar-logo" data-cursor="disable">
+          <img src="/images/suraj_image.jpg" alt="Suraj Pattewar" className="navbar-logo-img" />
         </a>
         <a
           href="mailto:surajpattewar95@gmail.com"

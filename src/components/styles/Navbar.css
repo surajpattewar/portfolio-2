@@ -11,6 +11,7 @@
   transform: translateX(-50%);
   top: 0;
   z-index: 9999;
+  align-items: center;
 }
 .header ul {
   font-size: 12px;
@@ -40,10 +41,22 @@
   letter-spacing: 1px;
   font-weight: 500;
 }
-.navbar-title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.2px;
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+.navbar-logo-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.navbar-logo:hover .navbar-logo-img {
+  border-color: var(--accentColor);
+  transform: scale(1.05);
 }
 @media only screen and (min-width: 500px) {
   .header {
