@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
@@ -9,6 +9,40 @@ gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
+  const [isMagnified, setIsMagnified] = useState(false);
+  const [clickPos, setClickPos] = useState({ x: 0, y: 0 });
+
+  const handleImageClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setClickPos({ x: e.clientX, y: e.clientY });
+    setIsMagnified(true);
+  };
+
+  useEffect(() => {
+    if (!isMagnified) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const distance = Math.sqrt(
+        Math.pow(e.clientX - clickPos.x, 2) +
+        Math.pow(e.clientY - clickPos.y, 2)
+      );
+      // Close if mouse moves more than 20px from the click point
+      if (distance > 20) {
+        setIsMagnified(false);
+      }
+    };
+
+    // Short delay to avoid closing from instant click micro-movements
+    const timeoutId = setTimeout(() => {
+      window.addEventListener("mousemove", handleMouseMove);
+    }, 150);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [isMagnified, clickPos]);
+
   useEffect(() => {
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
@@ -42,8 +76,13 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-logo" data-cursor="disable">
+        <a href="/#" className="navbar-logo" data-cursor="disable" onClick={handleImageClick}>
           <img src="/images/suraj_image.jpg" alt="Suraj Pattewar" className="navbar-logo-img" />
+          {isMagnified && (
+            <div className="magnifying-lens" onClick={(e) => e.stopPropagation()}>
+              <img src="/images/suraj_image.jpg" alt="Suraj Pattewar Magnified" />
+            </div>
+          )}
         </a>
         <a
           href="mailto:surajpattewar95@gmail.com"
@@ -74,6 +113,10 @@ const Navbar = () => {
       <div className="landing-circle1"></div>
       <div className="landing-circle2"></div>
       <div className="nav-fade"></div>
+
+      {isMagnified && (
+        <div className="magnifying-glass-overlay" onClick={() => setIsMagnified(false)} />
+      )}
     </>
   );
 };
